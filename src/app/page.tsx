@@ -147,9 +147,10 @@ export default function Home() {
           
   
           <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-semibold">Aprendizaje</h3>
+            <h3 className="text-lg font-semibold">Rehabilitación Vestibular</h3>
             <p className="mt-2 text-sm text-zinc-600">
-              Evaluación y tratamiento de trastornos de aprendizaje y desarrollo.
+              Programa terapéutico especializado para pacientes con alteraciones del equilibrio, mareo crónico o vértigo, 
+              enfocado en la recuperación funcional y la estabilidad.
             </p>
           </div>
 
