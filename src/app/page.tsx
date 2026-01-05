@@ -39,6 +39,64 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="bg-linear-to-b from-purple-400 to-purple-600">
+      {/* HERO con imagen de fondo + doctora */}
+      <section className="relative overflow-hidden">
+        
+        {/* Imagen de fondo */}
+        <div
+          className="absolute inset-0 bg-cover bg-center blur-sm scale-105"
+          style={{ backgroundImage: "url('/images/doctora-hero.jpg')" }}
+        />
+
+        {/* Overlay lila */}
+        <div className="absolute inset-0 bg-purple-600/70" />
+
+        {/* Contenido */}
+        <div className="relative mx-auto max-w-6xl px-6 py-24 grid gap-12 md:grid-cols-2 items-center">
+
+          {/* TEXTO */}
+          <div className="text-center md:text-left text-white">
+            <span className="inline-flex rounded-full bg-white/80 px-4 py-2 text-xs font-semibold text-purple-800">
+              Atención especializada
+            </span>
+
+            <h1 className="mt-6 text-4xl md:text-5xl font-extrabold tracking-tight">
+              Aurif Centro Audiofoniátrico
+            </h1>
+
+            <p className="mt-6 text-white/90 text-base md:text-lg">
+              Escucha, entiende y comunícate con atención profesional en lenguaje,
+              audición, voz y aprendizaje.
+            </p>
+
+            <div className="mt-8 flex flex-col sm:flex-row gap-3">
+              <a
+                href="#contacto"
+                className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-purple-700 hover:bg-zinc-100"
+              >
+                Agendar cita
+              </a>
+              <a
+                href="#servicios"
+                className="rounded-lg border border-white/40 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
+              >
+                Ver servicios
+              </a>
+            </div>
+          </div>
+
+          {/* IMAGEN DOCTORA GRANDE */}
+          <div className="flex justify-center md:justify-end">
+            <img
+              src="/images/doctora-hero.jpg"
+              alt="Doctora Aurif"
+              className="max-h-[520px] w-auto rounded-3xl shadow-2xl"
+            />
+          </div>
+
+        </div>
+      </section>
+
         <div className="mx-auto max-w-6xl px-6 py-20 text-center">
           <p className="mx-auto inline-flex items-center rounded-full bg-white/70 px-4 py-2 text-xs font-medium text-zinc-900">
             Atención especializada en audición y foniatría
