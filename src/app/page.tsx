@@ -1,7 +1,8 @@
 
 // src/app/page.tsx
-
+import Link from "next/link";
 import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -22,13 +23,19 @@ export default function Home() {
                 Aurif Centro Audiofoniátrico
               </span>
               <span className="text-xs text-zinc-500">Escucha, Entiende y Comunícate</span>
+
+              
             </div>
           </a>
           <nav className="hidden gap-6 text-sm text-zinc-700 md:flex">
-            <a className="hover:text-zinc-900" href="#servicios">Servicios</a>
+            <a className="hover:text-zinc-900" href="#servicios">conocenos</a>
             <a className="hover:text-zinc-900" href="#contacto">Contacto</a>
             <a className="hover:text-zinc-900" href="#contacto">Ubicación</a>
-          </nav>
+              
+            <Link className="hover:text-zinc-900" href="/portafolios">
+            Servicios
+            </Link>
+            </nav>
           <a
             href="#contacto"
             className="rounded-lg bg-purple-700 px-4 py-2 text-sm font-medium text-white hover:bg-purple-800"
